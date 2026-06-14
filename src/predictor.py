@@ -1,7 +1,7 @@
 import joblib
 
-from skill_extractor import extract_skills
-from resume_scorer import calculate_score, get_missing_skills
+from src.skill_extractor import extract_skills
+from src.resume_scorer import calculate_score, get_missing_skills
 
 # Load saved models
 model = joblib.load("models/resume_classifier.pkl")
