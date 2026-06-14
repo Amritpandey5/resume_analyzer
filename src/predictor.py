@@ -1,12 +1,11 @@
+from pathlib import Path
 import joblib
 
-from src.skill_extractor import extract_skills
-from src.resume_scorer import calculate_score, get_missing_skills
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Load saved models
-model = joblib.load("models/resume_classifier.pkl")
-tfidf = joblib.load("models/tfidf_vectorizer.pkl")
-label_encoder = joblib.load("models/label_encoder.pkl")
+model = joblib.load(BASE_DIR / "models" / "resume_classifier.pkl")
+tfidf = joblib.load(BASE_DIR / "models" / "tfidf_vectorizer.pkl")
+label_encoder = joblib.load(BASE_DIR / "models" / "label_encoder.pkl")
 
 
 def predict_resume(resume_text):
