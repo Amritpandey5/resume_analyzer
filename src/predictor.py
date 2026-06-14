@@ -1,6 +1,9 @@
 from pathlib import Path
 import joblib
 
+from src.skill_extractor import extract_skills
+from src.resume_scorer import calculate_score, get_missing_skills
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 model = joblib.load(BASE_DIR / "models" / "resume_classifier.pkl")
