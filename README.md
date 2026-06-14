@@ -119,6 +119,16 @@ streamlit run app.py
 * Resume ATS Score Analysis
 * Cloud Deployment
 
+## Screenshots
+
+### Home Page
+
+![Home](assets/home.png)
+
+### Prediction Result
+
+![Result](assets/result.png)
+
 ---
 
 ## Author
